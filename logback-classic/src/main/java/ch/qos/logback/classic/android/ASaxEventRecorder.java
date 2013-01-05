@@ -238,7 +238,7 @@ public class ASaxEventRecorder extends SaxEventRecorder {
    *
    * The initialization in this example would be: {@code new StatePassFilter("x", "y")}.
    */
-  class StatePassFilter {
+  static class StatePassFilter {
     private final String[] _states;
     private int _depth = 0;
 
