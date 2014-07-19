@@ -1,10 +1,11 @@
 language: android
-components:
-  # Force update platform-tools and tools to always run the latest revisions
-  - platform-tools
-  - tools
+android:
+  components:
+    # Force update platform-tools and tools to always run the latest revisions
+    - platform-tools
+    - tools
+    - android-7
 before_install:
-  - echo yes | android update sdk --filter android-7 --no-ui --force > /dev/null
   - echo no | android create avd --force -n test -t android-7 --abi armeabi-v7a
   - emulator -avd test -no-skin -no-audio -no-window &
 before_script:
