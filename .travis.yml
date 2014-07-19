@@ -1,9 +1,6 @@
 language: android
 android:
   components:
-    # Force update platform-tools and tools to always run the latest revisions
-    - platform-tools
-    - tools
     - android-7
   licenses:
     - '.*'
