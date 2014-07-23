@@ -7,5 +7,6 @@ android:
 before_install:
   - echo no | android create avd --force -n test -t android-7
   - emulator -avd test -no-skin -no-audio -no-window &
-before_script:
+script:
+  - mvn install -B
   - ./ci/wait_for_emulator.sh
